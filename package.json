@@ -1,0 +1,15 @@
+{
+  "name": "port-world",
+  "version": "0.0.0",
+  "description": "> A Web Server Or Library Need A Port.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node generate.js"
+  },
+  "author": "XGHeaven",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.11.0"
+  }
+}

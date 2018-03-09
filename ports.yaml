@@ -1,0 +1,30 @@
+ports:
+  - port: 22
+    usages:
+      - name: ssh
+  - port: 80
+    description: >
+      used by many server, such like nginx, apache
+    usages:
+      - name: nginx
+      - name: apache
+  - port: 3000
+    description: >
+      used by many development server,
+      such like http-server.
+  - port: 3306
+    usages:
+      - name: mysql
+        link: https://www.mysql.com/
+  - port: 11211
+    usages:
+      - name: memcached
+        link: https://www.memcached.org/
+  - port: 6379
+    usages:
+      - name: redis
+        link: https://redis.io/
+  - port: 27017
+    usages:
+      - name: mongodb
+        link: https://www.mongodb.com/
