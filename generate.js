@@ -2,6 +2,14 @@
 const yaml = require('js-yaml')
 const fs = require('fs')
 
+function wrapTCP(enable = true) {
+    return `${enable ? '**' : '~~'}TCP${enable ? '**' : '~~'}`
+}
+
+function wrapUDP(enable = false) {
+    return `${enable ? '**' : '~~'}UDP${enable ? '**' : '~~'}`
+}
+
 const mdHeader = `
 # Ports List
 
@@ -24,7 +32,7 @@ ${d.description || '*No Description*'}
 ${
     d.usages ? d.usages.map(usage => `- ${
         usage.link ? `[${usage.name}](${usage.link})` : usage.name
-    }`).join('\n') : ''
+    } ${wrapTCP(usage.tcp)}/${wrapUDP(usage.udp)} ${usage.title || ''}`).join('\n') : ''
 }
 `
 

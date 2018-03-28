@@ -11,7 +11,7 @@ List By Port Number Order
 
 ### Usages
 
-- ssh
+- ssh **TCP**/~~UDP~~ 
 
 
 ## 80
@@ -21,8 +21,8 @@ used by many server, such like nginx, apache
 
 ### Usages
 
-- nginx
-- apache
+- nginx **TCP**/~~UDP~~ 
+- apache **TCP**/~~UDP~~ 
 
 
 ## 3000
@@ -41,7 +41,16 @@ used by many development server, such like http-server.
 
 ### Usages
 
-- [mysql](https://www.mysql.com/)
+- [mysql](https://www.mysql.com/) **TCP**/~~UDP~~ 
+
+
+## 4789
+
+*No Description*
+
+### Usages
+
+- [Docker Swarm](https://docs.docker.com/engine/swarm/) ~~TCP~~/**UDP** for the container ingress network
 
 
 ## 6379
@@ -50,7 +59,16 @@ used by many development server, such like http-server.
 
 ### Usages
 
-- [redis](https://redis.io/)
+- [redis](https://redis.io/) **TCP**/~~UDP~~ 
+
+
+## 7946
+
+*No Description*
+
+### Usages
+
+- [Docker Swarm](https://docs.docker.com/engine/swarm/) **TCP**/**UDP** for container network discovery
 
 
 ## 11211
@@ -59,7 +77,7 @@ used by many development server, such like http-server.
 
 ### Usages
 
-- [memcached](https://www.memcached.org/)
+- [memcached](https://www.memcached.org/) **TCP**/~~UDP~~ 
 
 
 ## 27017
@@ -68,7 +86,7 @@ used by many development server, such like http-server.
 
 ### Usages
 
-- [mongodb](https://www.mongodb.com/)
+- [mongodb](https://www.mongodb.com/) **TCP**/~~UDP~~ 
 
 
-> Updated: Fri Mar 09 2018 15:42:29 GMT+0800 (CST)
+> Updated: Wed Mar 28 2018 17:40:41 GMT+0800 (CST)

@@ -16,6 +16,19 @@ ports:
     usages:
       - name: mysql
         link: https://www.mysql.com/
+  - port: 7946
+    usages:
+      - name: Docker Swarm
+        link: https://docs.docker.com/engine/swarm/
+        title: for container network discovery
+        udp: true
+  - port: 4789
+    usages:
+      - name: Docker Swarm
+        link: https://docs.docker.com/engine/swarm/
+        title: for the container ingress network
+        tcp: false
+        udp: true
   - port: 11211
     usages:
       - name: memcached
